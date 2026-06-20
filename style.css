@@ -72,6 +72,17 @@ body.is-ready .cursor-ring {
   opacity: 0.55;
 }
 
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+  body,
+  a {
+    cursor: auto !important;
+  }
+}
+
 .container {
   position: relative;
   min-height: 100vh;
