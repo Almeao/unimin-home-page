@@ -29,59 +29,7 @@ body {
   background: var(--bg);
 }
 
-@media (hover: hover) and (pointer: fine) {
-  body,
-  a {
-    cursor: none;
-  }
-}
 
-.cursor-dot,
-.cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 10000;
-  border-radius: 50%;
-  opacity: 0;
-  will-change: transform;
-}
-
-body.is-ready .cursor-dot,
-body.is-ready .cursor-ring {
-  opacity: 1;
-}
-
-.cursor-dot {
-  width: 7px;
-  height: 7px;
-  background: var(--accent);
-  box-shadow: 0 0 12px var(--accent-glow);
-}
-
-.cursor-ring {
-  width: 38px;
-  height: 38px;
-  border: 1.5px solid var(--accent);
-  opacity: 0.55;
-  transition: opacity 0.3s ease;
-}
-
-body.is-ready .cursor-ring {
-  opacity: 0.55;
-}
-
-@media (max-width: 1024px) {
-  .cursor-dot,
-  .cursor-ring {
-    display: none !important;
-  }
-  body,
-  a {
-    cursor: auto !important;
-  }
-}
 
 .container {
   position: relative;
