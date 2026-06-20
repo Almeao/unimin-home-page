@@ -3,48 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="ZETROSYS FINAL 1.png" type="image/x-icon" />
-    <title>Zetrosys Technologies</title>
+    <link rel="icon" href="texture-lab-1781938829882.png" type="image/png" />
+    <title>UNIMIN India — Coming Soon</title>
+    <style>
+      html,
+      body {
+        background: #000;
+      }
+      body:not(.is-ready) .container {
+        visibility: hidden;
+      }
+      .page-loader {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        z-index: 9999;
+      }
+      body.is-ready .page-loader {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="page-loader" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
 
-
-
-  
     <div class="container">
-      <div class="main_logo">
-        <img src="texture-lab-1781938829882.png" alt="">
-      </div>
-     
-      <div class="heading_2">
-        <h2>We are comming soon</h2>
-      </div>
-      <div class="heading_3">
-        <h2>Stay tuned</h2>
-      </div>
-
-      <div class="footer">
-        <div class="footer_left footer_p footer_all">
-          <p>Copyrights ⓒ 2026 Reserved by UNIMIN-INDIA</p>
+      <main class="content">
+        <div class="main_logo">
+          <img
+            src="texture-lab-1781938829882.png"
+            alt="UNI-MIN INDIA — Minerals and More"
+          />
         </div>
-        <div class="footer_center footer_all">
-          <div class="footer_gmail footer_all_link">
-            <a href="zetrosys@gmail.com"><img src="icons8-gmail-48.svg" alt=""></a>
+
+        <p class="eyebrow">Coming Soon</p>
+        <h1 class="headline">We're crafting something exceptional</h1>
+        <p class="subline">Our main website launches in</p>
+
+        <div class="countdown" aria-live="polite">
+          <div class="countdown-grid">
+            <div class="countdown-unit">
+              <span class="countdown-value" data-unit="days">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-value" data-unit="hours">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-value" data-unit="minutes">00</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-value" data-unit="seconds">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
           </div>
-          <div class="footer_linkedin footer_all_link">
-            <a href="https://www.linkedin.com/company/zetrosys/about/"><img src="icons8-linkedin.svg" alt=""></a>
-          </div>
+          <p class="countdown-date" data-launch-date></p>
         </div>
-        <div class="footer_right footer_p footer_all">Created by Obito studios</div>
-      </div>
 
-      <div class="bg_video">
-          <video class="bg_video_1" src="side-rays-1781943028222.webm" autoplay muted loop></video>
+        <div class="accent-line" aria-hidden="true"></div>
+      </main>
 
-        <video class="bg_video_2" src="pixel-snow-1781942180880.webm" autoplay muted loop></video>
+      <footer class="footer">
+        <p class="footer-copy">Copyright &copy; 2026 UNIMIN-INDIA. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:contact@unimin-india.com" class="footer-link">Get in touch</a>
+        </div>
+        <p class="footer-credit">Created by Obito Studios</p>
+      </footer>
+
+      <div class="bg_video" aria-hidden="true">
+        <video
+          class="bg_video_1"
+          src="side-rays-1781943028222.webm"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <video
+          class="bg_video_2"
+          src="pixel-snow-1781942180880.webm"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="bg_overlay"></div>
       </div>
-    
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
