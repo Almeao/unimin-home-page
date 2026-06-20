@@ -96,7 +96,7 @@ body.is-ready .cursor-ring {
 }
 
 .main_logo {
-  width: min(72vw, 28rem);
+  width: min(90vw, 38rem);
   margin-bottom: 2.5rem;
   filter: drop-shadow(0 0 2.5rem var(--accent-glow));
 }
@@ -129,7 +129,7 @@ body.is-ready .cursor-ring {
   font-size: clamp(0.95rem, 2.2vw, 1.15rem);
   font-weight: 300;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: var( --accent);
   max-width: 32rem;
   margin-bottom: 1.75rem;
 }
@@ -231,9 +231,34 @@ body.is-ready .cursor-ring {
   transition: opacity 0.2s ease;
 }
 
-.footer-link:hover {
-  opacity: 0.75;
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
 }
+
+.footer-link {
+  opacity: 0.75;
+  background-color: #76a5d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  transition: opacity 0.2s;
+  gap: 5;
+}
+
+.footer-link img {
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+  
+}
+
 
 .footer-credit {
   justify-self: end;
