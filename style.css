@@ -72,7 +72,7 @@ body.is-ready .cursor-ring {
   opacity: 0.55;
 }
 
-@media (hover: none), (pointer: coarse) {
+@media (max-width: 1024px) {
   .cursor-dot,
   .cursor-ring {
     display: none !important;
